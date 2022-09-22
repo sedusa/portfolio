@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# How to deploy a React App to Github Pages
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React Hero image](/src/images/react-header-image.jpg 'React Hero image')
 
-## Available Scripts
+## Introduction
+---
+In this short tutorial I'll show you how to go about creating a React application and deploying it to [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages 'Github Pages') (a free web hosting service provided by Github). I will be using [create-react-app](https://create-react-app.dev 'Create React App') (a tool used to build React applications from scratch) and [gh-pages](https://www.npmjs.com/package/gh-pages 'gh-pages') (an npm package that makes deployment to Github Pages pure bliss).  
+<br/>
+## Tutorial
+---
+### Prerequisites
+---
+1. You need to have [Node.js](https://nodejs.org/en/ 'Node.js') and [npm](https://docs.npmjs.com/about-npm 'npm') installed on your computer. These are the versions I will be using for this tutorial (you don't have to have the same versions btw). Personally I use [nvm](https://github.com/nvm-sh/nvm 'nvm') (a version manager for node.js that allows you to quickly install and use different version of node via the command line).
+```
+  $ node --version
+  v16.11.1
 
-In the project directory, you can run:
+  $ npm --version
+  8.0.0
+```
 
-### `npm start`
+2. You should also have `Git` installed.  The version I will be using is:
+```
+  $ git --version
+  git version 2.37.0 (Apple Git-136)
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. You should have a Github account or [set one up](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account 'Setting up a Github acccount').
+<br/>
+<br/>
+### Steps to take
+---
